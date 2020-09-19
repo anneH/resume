@@ -27,8 +27,17 @@ h5 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-#about_me,
+
 #blog_text {
+  background-color: gold;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#about_me {
   background-color: gold;
   padding: 30px;
   margin-top: 50px;
@@ -36,6 +45,7 @@ h5 {
   margin-left: 200px;
   margin-right: 200px;
 }
+
 
 .text-white {
   position: absolute;
