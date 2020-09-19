@@ -1,0 +1,44 @@
+.rounded-circle {
+  width: 200px;
+}
+
+h1 {
+  color: blue;
+  font-family: Times;
+  padding: 50px;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: black;
+  font: ariel;
+  padding: 5px;
+}
+
+#resume_text {
+  color: white;
+  bottom: 5;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#about_me,
+#blog_text {
+  background-color: gold;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.text-white {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
