@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="robots" content="noindex">
-    <title>Material Design for Bootstrap</title>
+    <title>{{title}}</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -39,15 +39,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">About Me</a>
+            {% for page in pages %}
+            <li class="nav-item"></li>
+            <a class="nav-link" href="{{ page.link }}">{{ page.title }}</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./resume.html">Resume</a>
-            </li>
+            {% endfor %}
           </ul>
           <!-- Social_Icons -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
