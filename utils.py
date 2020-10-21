@@ -25,7 +25,7 @@ def select_command():
 # Gets the file name from the file path
 def get_file_name(path):
         file_name = os.path.basename(path)
-        name_only = os.path.splitext(file_name)
+        name_only, extension = os.path.splitext(file_name)
         return name_only
 
 # Gets the file name and extension from the file path
