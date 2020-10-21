@@ -6,21 +6,21 @@ all_html_files = glob.glob("content/*.html")
 
 #Prompts for a system argument
 def select_command():
-    print("This is argv:", sys.argv)
-    command = sys.argv[1]
-    print(command)
-    if command == "build":
-        print("Build was specified")
-        create_html_file(get_pages())
-    elif command == "new":
-        print("New page was specified")
-        new_content= '''
-        <h1>New Content!</h1>
-        <p>New content...</p>
-        '''
-        open('content/new_content_page.html', 'w+').write(new_content)
-    else:
+    if len(sys.argv) < 2: 
         print("Please specify ’build’ or ’new’")
+    else:
+        command = sys.argv[1]
+        print(command)
+        if command == "build":
+            print("Build was specified")
+            create_html_file(get_pages())
+        elif command == "new":
+            print("New page was specified")
+            new_content= '''
+            <h1>New Content!</h1>
+            <p>New content...</p>
+            '''
+            open('content/new_content_page.html', 'w+').write(new_content)
  
 # Gets the file name from the file path
 def get_file_name(path):
